@@ -5,9 +5,9 @@ Este repositório contém o código-fonte de uma API desenvolvida para a discipl
 ## Integrantes da Equipe
 
 1. Guilherme Xavier
-2. 
-3. 
-4. 
+2. Aline Raiane
+3. Kananda Dias
+4. Millena Cardoso
 
 ## Funcionalidades Principais
 
