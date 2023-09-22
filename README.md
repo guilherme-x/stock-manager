@@ -1,28 +1,52 @@
-# Adonis API application
+# API de Gerenciamento de Estoque
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Este repositório contém o código-fonte de uma API desenvolvida para a disciplina de Sistemas Distribuídos e Mobile da UNIFG. A API, criada em Node.js com o framework Adonis, permite o gerenciamento de estoque de produtos em um sistema distribuído, usando um banco de dados PostgreSQL.
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+## Integrantes da Equipe
 
-## Setup
+1. Guilherme Xavier
+2. 
+3. 
+4. 
 
-Use the adonis command to install the blueprint
+## Funcionalidades Principais
 
-```bash
-adonis new yardstick --api-only
-```
+- **Cadastro, Atualização e Remoção de Produtos:** Permite adicionar, atualizar e remover produtos no estoque.
+- **Consulta de Produtos:** Possibilita a consulta de informações detalhadas sobre produtos.
+- **Controle de Estoque:** Permite verificar a quantidade disponível e atualizar o estoque após transações.
 
-or manually clone the repo and then run `npm install`.
+## Tecnologias Utilizadas
 
+- **Linguagem de Programação:** Node.js
+- **Framework Web:** Adonis
+- **Banco de Dados:** PostgreSQL
+- **Documentação:** Swagger
 
-### Migrations
+## Como Usar
 
-Run the following command to run startup migrations.
+1. Clone este repositório:
 
-```js
-adonis migration:run
-```
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   cd nome-do-repositorio
+   npm install
+   ```
+
+3. Configure as variáveis de ambiente, incluindo informações de conexão com o PostgreSQL.
+
+4. Execute a aplicação:
+
+   ```bash
+   npm start
+   ```
+
+5. Acesse a documentação para detalhes dos endpoints.
+
+## Documentação
+
+A documentação completa da API está disponível na pasta `/docs` e fornece informações detalhadas sobre os endpoints, parâmetros e exemplos de uso.
