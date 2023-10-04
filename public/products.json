@@ -1,92 +1,91 @@
 [
-    {
-      "id": 1,
-      "name": "Arroz",
-      "brand": "Tio João",
-      "category": "Alimentos",
-      "price": 5.99,
-      "weight": "1kg",
-      "description": "Arroz branco de qualidade."
-    },
-    {
-      "id": 2,
-      "name": "Feijão",
-      "brand": "Camil",
-      "category": "Alimentos",
-      "price": 3.49,
-      "weight": "500g",
-      "description": "Feijão carioca."
-    },
-    {
-      "id": 3,
-      "name": "Macarrão",
-      "brand": "Renata",
-      "category": "Alimentos",
-      "price": 2.29,
-      "weight": "500g",
-      "description": "Macarrão espaguete."
-    },
-    {
-      "id": 4,
-      "name": "Leite",
-      "brand": "Nestlé",
-      "category": "Laticínios",
-      "price": 2.99,
-      "volume": "1 litro",
-      "description": "Leite integral."
-    },
-    {
-      "id": 5,
-      "name": "Ovos (dúzia)",
-      "brand": "Granja Feliz",
-      "category": "Alimentos",
-      "price": 4.49,
-      "description": "Ovos frescos."
-    },
-    {
-      "id": 6,
-      "name": "Pão de Forma",
-      "brand": "Wickbold",
-      "category": "Alimentos",
-      "price": 3.29,
-      "weight": "400g",
-      "description": "Pão de forma integral."
-    },
-    {
-      "id": 7,
-      "name": "Açúcar",
-      "brand": "União",
-      "category": "Alimentos",
-      "price": 2.79,
-      "weight": "1kg",
-      "description": "Açúcar refinado."
-    },
-    {
-      "id": 8,
-      "name": "Sal",
-      "brand": "Cisne",
-      "category": "Alimentos",
-      "price": 1.49,
-      "weight": "500g",
-      "description": "Sal refinado."
-    },
-    {
-      "id": 9,
-      "name": "Óleo de Cozinha",
-      "brand": "Soya",
-      "category": "Alimentos",
-      "price": 6.99,
-      "volume": "900ml",
-      "description": "Óleo de soja."
-    },
-    {
-      "id": 10,
-      "name": "Café (250g)",
-      "brand": "Melitta",
-      "category": "Alimentos",
-      "price": 8.99,
-      "weight": "250g",
-      "description": "Café torrado e moído."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Arroz",
+    "brand": "Tio João",
+    "category": "Alimentos",
+    "price": 5.99,
+    "weight": "1kg",
+    "description": "Arroz branco de qualidade."
+  },
+  {
+    "id": 2,
+    "name": "Feijão",
+    "brand": "Camil",
+    "category": "Alimentos",
+    "price": 3.49,
+    "weight": "500g",
+    "description": "Feijão carioca."
+  },
+  {
+    "id": 3,
+    "name": "Macarrão",
+    "brand": "Renata",
+    "category": "Alimentos",
+    "price": 2.29,
+    "weight": "500g",
+    "description": "Macarrão espaguete."
+  },
+  {
+    "id": 4,
+    "name": "Leite",
+    "brand": "Nestlé",
+    "category": "Laticínios",
+    "price": 2.99,
+    "volume": "1 litro",
+    "description": "Leite integral."
+  },
+  {
+    "id": 5,
+    "name": "Ovos (dúzia)",
+    "brand": "Granja Feliz",
+    "category": "Alimentos",
+    "price": 4.49,
+    "description": "Ovos frescos."
+  },
+  {
+    "id": 6,
+    "name": "Pão de Forma",
+    "brand": "Wickbold",
+    "category": "Alimentos",
+    "price": 3.29,
+    "weight": "400g",
+    "description": "Pão de forma integral."
+  },
+  {
+    "id": 7,
+    "name": "Açúcar",
+    "brand": "União",
+    "category": "Alimentos",
+    "price": 2.79,
+    "weight": "1kg",
+    "description": "Açúcar refinado."
+  },
+  {
+    "id": 8,
+    "name": "Sal",
+    "brand": "Cisne",
+    "category": "Alimentos",
+    "price": 1.49,
+    "weight": "500g",
+    "description": "Sal refinado."
+  },
+  {
+    "id": 9,
+    "name": "Óleo de Cozinha",
+    "brand": "Soya",
+    "category": "Alimentos",
+    "price": 6.99,
+    "volume": "900ml",
+    "description": "Óleo de soja."
+  },
+  {
+    "id": 10,
+    "name": "Café (250g)",
+    "brand": "Melitta",
+    "category": "Alimentos",
+    "price": 8.99,
+    "weight": "250g",
+    "description": "Café torrado e moído."
+  }
+]
