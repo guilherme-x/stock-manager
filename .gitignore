@@ -6,6 +6,6 @@ tmp
 
 # Environment variables, never commit this file
 .env
-
+.development
 # The development sqlite file
 database/*.sqlite

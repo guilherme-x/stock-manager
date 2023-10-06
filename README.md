@@ -1,6 +1,6 @@
 # API de Gerenciamento de Estoque
 
-Este repositório contém o código-fonte de uma API desenvolvida para a disciplina de Sistemas Distribuídos e Mobile da UNIFG. A API, criada em Node.js com o framework Adonis, permite o gerenciamento de estoque de produtos em um sistema distribuído, usando um banco de dados PostgreSQL.
+Este repositório contém o código-fonte de uma API desenvolvida para a disciplina de Sistemas Distribuídos e Mobile da UNIFG. A API, criada em Node.js com o framework Express, permite o gerenciamento de estoque de produtos em um sistema distribuído, usando um banco de dados MongoDB.
 
 ## Integrantes da Equipe
 
@@ -18,8 +18,8 @@ Este repositório contém o código-fonte de uma API desenvolvida para a discipl
 ## Tecnologias Utilizadas
 
 - **Linguagem de Programação:** Node.js
-- **Framework Web:** Adonis
-- **Banco de Dados:** PostgreSQL
+- **Framework Web:** Express
+- **Banco de Dados:** MongoDB
 - **Documentação:** Swagger
 
 ## Como Usar
@@ -49,4 +49,4 @@ Este repositório contém o código-fonte de uma API desenvolvida para a discipl
 
 ## Documentação
 
-A documentação completa da API está disponível na pasta `/docs` e fornece informações detalhadas sobre os endpoints, parâmetros e exemplos de uso.
+A documentação completa da API está disponível na rota `/docs` e fornece informações detalhadas sobre os endpoints, parâmetros e exemplos de uso.

@@ -1,0 +1,168 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API de Gerenciamento de Estoque",
+      "version": "1.0.0",
+      "description": "Uma API para gerenciamento de estoque de produtos."
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Servidor de Desenvolvimento"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Produtos",
+        "description": "Operações relacionadas a produtos."
+      },
+      {
+        "name": "Clientes",
+        "description": "Operações relacionadas a clientes."
+      }
+    ],
+    "paths": {
+      "/produtos": {
+        "post": {
+          "tags": ["Produtos"],
+          "summary": "Cria um novo produto",
+          "description": "Cria um novo produto no estoque.",
+          "requestBody": {
+            "description": "Objeto JSON com informações do produto.",
+            "required": true,
+            "content": {
+              "application/json": {
+                "example": {
+                  "name": "Produto A",
+                  "description": "Descrição do Produto A",
+                  "price": 10.99,
+                  "category": "Categoria A",
+                  "barcode": "123456789"
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Produto criado com sucesso."
+            },
+            "500": {
+              "description": "Erro interno do servidor."
+            }
+          }
+        },
+        "get": {
+          "tags": ["Produtos"],
+          "summary": "Lista todos os produtos",
+          "description": "Retorna uma lista de todos os produtos no estoque.",
+          "responses": {
+            "200": {
+              "description": "Lista de produtos."
+            },
+            "500": {
+              "description": "Erro interno do servidor."
+            }
+          }
+        }
+      },
+      "/api/produtos/{id}": {
+        "get": {
+          "tags": ["Produtos"],
+          "summary": "Obtém detalhes de um produto",
+          "description": "Retorna detalhes de um produto com base em seu ID.",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "ID do produto a ser buscado.",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Detalhes do produto."
+            },
+            "404": {
+              "description": "Produto não encontrado."
+            },
+            "500": {
+              "description": "Erro interno do servidor."
+            }
+          }
+        },
+        "put": {
+          "tags": ["Produtos"],
+          "summary": "Atualiza um produto",
+          "description": "Atualiza as informações de um produto com base em seu ID.",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "ID do produto a ser atualizado.",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "Objeto JSON com informações atualizadas do produto.",
+            "required": true,
+            "content": {
+              "application/json": {
+                "example": {
+                  "name": "Produto A (atualizado)",
+                  "description": "Descrição do Produto A (atualizado)",
+                  "price": 12.99,
+                  "category": "Categoria A (atualizada)",
+                  "barcode": "123456789"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Produto atualizado com sucesso."
+            },
+            "404": {
+              "description": "Produto não encontrado."
+            },
+            "500": {
+              "description": "Erro interno do servidor."
+            }
+          }
+        },
+        "delete": {
+          "tags": ["Produtos"],
+          "summary": "Exclui um produto",
+          "description": "Exclui um produto com base em seu ID.",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "ID do produto a ser excluído.",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Produto excluído com sucesso."
+            },
+            "404": {
+              "description": "Produto não encontrado."
+            },
+            "500": {
+              "description": "Erro interno do servidor."
+            }
+          }
+        }
+      }
+    }
+  }
+  
