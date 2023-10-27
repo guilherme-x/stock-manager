@@ -6,6 +6,7 @@ const app = express();
 
 
 const productRoutes = require('./routes/productRoutes');
+const cartRoutes = require('./routes/cartRoutes');
 
 const port = process.env.PORT || 3000;
 const connectToDatabase = require('./config/database');
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 
 
 app.use('/products', productRoutes);
+app.use('/cart', cartRoutes);
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDefinition));
 
 
