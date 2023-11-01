@@ -23,7 +23,11 @@ const cartSchema = new mongoose.Schema({
     active: {
         type: Boolean,
         default: true
-    }
+    },
+    created_at: {
+        type: Date,
+        default: Date.now,
+    },
 })
 const Cart = mongoose.model('Cart', cartSchema);
 module.exports = Cart;

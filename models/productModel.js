@@ -31,6 +31,10 @@ const productSchema = new mongoose.Schema({
     required: true,
     min: 1,
   },
+  created_at: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const Product = mongoose.model('Product', productSchema);
