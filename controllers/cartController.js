@@ -49,6 +49,7 @@ exports.updateCart = async (req, res) => {
     }
 };
 
+
 // Delete a cart
 exports.deleteCart = async (req, res) => {
     try {
