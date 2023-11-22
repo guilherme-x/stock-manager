@@ -4,6 +4,10 @@ const Sale = require('../models/saleModel');
 
 exports.createSale = async (req, res) => {
     try {
+        const params = req.body
+    
+        
+        
         const { cart_uid, discount, payment_method } = req.body;
         const saleExists = await Sale.exists({ cart_uid })
         if (saleExists) {
@@ -21,5 +25,14 @@ exports.createSale = async (req, res) => {
         res.status(201).json(sale);
     } catch (err) {
         res.status(400).json({ message: err.message });
+    }
+};
+exports.getAllSales = async (req, res) => {
+    try {
+        const params = req.body
+        const sales = await Sale.paginate(params);
+        res.json(sales);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
     }
 };
