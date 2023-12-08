@@ -2,7 +2,7 @@ const User = require ('../models/User')
 
 async function createUser(nome, email, senha){
     try {
-        const user = await User.creat({ nome, email, senha });
+        const user = await User.create({ nome, email, senha });
         return user;
     }
     catch (error) {
