@@ -4,10 +4,6 @@ const Sale = require('../models/saleModel');
 
 exports.createSale = async (req, res) => {
     try {
-        const params = req.body
-    
-        
-        
         const { cart_uid, discount, payment_method } = req.body;
         const saleExists = await Sale.exists({ cart_uid })
         if (saleExists) {
@@ -35,4 +31,17 @@ exports.getAllSales = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
+    exports.deleteSale = async (req, res) => {
+        try {
+            const { saleId } = req.params;
+            const sale = await Sale.findById(saleId);
+            if (!sale) {
+                return res.status(404).json({ message: 'Sale not found' });
+            }
+            await sale.remove();
+            res.json({ message: 'Sale deleted successfully' });
+        } catch (err) {
+            res.status(500).json({ error: err.message });
+        }
+    };
 };

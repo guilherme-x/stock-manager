@@ -2,9 +2,19 @@ const Product = require('../models/productModel');
 
 exports.createProduct = async (req, res) => {
     try {
-        const product = new Product(req.body);
-        await product.save();
-        res.status(201).json(product);
+        let products;
+
+        if (Array.isArray(req.body)) {
+            // Se req.body é uma matriz, insere vários produtos
+            products = await Product.insertMany(req.body);
+        } else {
+            // Se req.body não é uma matriz, insere um único produto
+            const product = new Product(req.body);
+            await product.save();
+            products = [product];
+        }
+
+        res.status(201).json(products);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
@@ -12,8 +22,9 @@ exports.createProduct = async (req, res) => {
 
 exports.getAllProducts = async (req, res) => {
     try {
-        const params = req.body
-        const products = await Product.paginate(params);
+        const page = req.query.page || 1; // Se req.query.page não estiver definido, default para 1
+        const limit = 10; // Número de produtos por página
+        const products = await Product.paginate({}, { page, limit });
         res.json(products);
     } catch (error) {
         res.status(500).json({ error: error.message });
